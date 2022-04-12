@@ -14,6 +14,17 @@
             <div style="position:absolute; margin-left:auto; margin-right:auto; left:0; right:0; text-align:center;">
                 <h4>VUE SHOP</h4>
             </div>
+            <v-spacer></v-spacer>
+            <v-divider vertical></v-divider>
+            <v-btn icon class="mx-1">
+                <v-icon>mdi-account-outline</v-icon>
+            </v-btn>
+            <v-divider vertical></v-divider>
+            <v-btn icon class="mx-1">
+                <v-badge color="#000" content="2">
+                    <v-icon>mdi-cart-outline</v-icon>
+                </v-badge>
+            </v-btn>
         </v-app-bar>
 
 </template>
@@ -37,6 +48,8 @@ export default {
 .v-badge__badge{
     font-size: 10px !important;
     height: 18px !important;
+    min-width: 18px !important;
 }
+
 
 </style>
