@@ -5,6 +5,7 @@
       <router-view />
       <h1>test</h1>
       <Home />
+      <Dashboard />
     </v-main>
   </v-app>
   
@@ -16,10 +17,11 @@
 <script>
 
 import Home from "./components/Home.vue"
+import Dashboard from "./components/Dashboard.vue"
 
 export default {
   name: 'App',
-  components: {Home},
+  components: {Home, Dashboard},
   data: () => ({
 
   }),
