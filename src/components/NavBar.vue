@@ -21,9 +21,7 @@
             </v-btn>
             <v-divider vertical></v-divider>
             <v-btn icon class="mx-1">
-                <v-badge color="#000" content="2">
                     <v-icon>mdi-cart-outline</v-icon>
-                </v-badge>
             </v-btn>
         </v-app-bar>
 

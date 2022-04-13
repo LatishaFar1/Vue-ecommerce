@@ -116,8 +116,7 @@
                       v-if="hover"
                       class="
                         d-flex
-                        transition-fast-in-fast-out
-                        blue
+                        transition-fast-in
                         v-card--reveal
                         display-3
                         white--text
@@ -128,10 +127,7 @@
                         <v-icon>mdi-cart-outlined</v-icon>
                         Buy
                       </v-btn>
-                      <v-btn fab small color="white" class="ml-2">
-                        <v-icon color="black">mdi-content-copy</v-icon>
-                      </v-btn>
-                      <v-btn fab small color="white" class="ml-2">
+                      <v-btn fab small color="white" class="ml-2" elevation="2">
                         <v-icon color="black">mdi-heart-outline</v-icon>
                       </v-btn>
                     </div>
@@ -180,6 +176,18 @@ export default {
               image: "poncho.jpeg",
               title: "PONCHO",
               price: "45.00"
+          },
+          {
+              class: "pa-0",
+              image: "tan jacket.jpeg",
+              title: "JACKET",
+              price: "55.00"
+          },
+          {
+              class: "pa-0",
+              image: "shirt - be kind.jpeg",
+              title: "SHIRT",
+              price: "15.00"
           }
       ]
   })
