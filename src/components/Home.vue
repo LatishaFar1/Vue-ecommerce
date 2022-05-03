@@ -23,7 +23,7 @@
              <br/>
         </p>
        
-       <Footer />
+       
    </v-app>
 
 </template>
@@ -33,11 +33,11 @@
 
 
 import Dashboard from '../components/Dashboard.vue'
-import Footer from '../components/Footer.vue'
+
 
 export default {
     name: "Home",
-    components: { Dashboard, Footer }
+    components: { Dashboard}
 }
 
 </script>

@@ -27,9 +27,15 @@
             </a>
       </v-btn>
       
-          <v-btn class="ma-1" dark >
+        <v-btn class="ma-1" dark >
         <a href="https://tishfaroul.medium.com/">
                   <v-icon dark> mdi-file</v-icon>
+            </a>
+      </v-btn>
+
+        <v-btn class="ma-1" dark >
+        <a href="https://twitter.com/TishFaroul">
+                  <v-icon dark> mdi-twitter</v-icon>
             </a>
       </v-btn>
 
@@ -42,22 +48,14 @@
 </template>
 
 
-<script>
-
-
-export default {
-  methods: {
-      redirect(github){
-          window.location.href = "https://github.com/LatishaFar1";
-      }
-  }
-}
-</script>
 
 
 
 
 <style scoped>
-
+      a{
+            text-decoration: none;
+            color: #42f5e3;
+      }
 
 </style>
