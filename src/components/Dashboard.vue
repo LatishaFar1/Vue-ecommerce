@@ -1,4 +1,6 @@
 <template>
+
+    <v-app>
     <v-container fluid>
         <v-card color="#000" height="150px" tile flat class="d-flex align-center justify-center" dark>
               <v-row>
@@ -21,7 +23,10 @@
             <v-row>
               <v-col cols="12" sm="4" class="pl-8 pt-5">
                 <h3 class="white--text mt-5">welcome</h3>
-                <v-btn rounded color="#6fc9bd" dark class="px-8 mt-10" >More Info </v-btn>
+                <v-btn rounded color="#6fc9bd" dark class="px-8 mt-10" >More Info
+                  <a href="/about">
+
+                  </a> </v-btn>
               </v-col>
 
               <v-col cols="12" sm="8">
@@ -91,60 +96,69 @@
           </v-card>
          </v-col>
 
-        <v-col cols="9" class="mt-n3">
-          <v-row>
-            <v-col
-              cols="12"
+          </v-row>
+ 
+
+    </v-card>
+
+
+    
+
+    
+
+
+
+
+     <v-card
+    class="mx-auto my-12"
+    max-width="374"
+           cols="12"
               sm="4"
               v-for="(clothe, i) in Clothes"
               :key="i"
               :class="clothe.class"
-            >
+  >
+  
+    <template slot="progress">
+      <v-progress-linear
+        color="deep-purple"
+        height="10"
+        indeterminate
+      ></v-progress-linear>
+    </template>
 
-              <v-hover v-slot:default="{ hover }">
-                <v-card height="280" align="center" flat outlined tile>
-                  <v-img  :src="clothe.image"   width="300" height="300" contain ></v-img>
-                  <v-card-text class="mt-n4">
-                    <strong color="#13c2ab">{{clothe.title}}</strong>
-                    <br>
-                    <strong class="green--text">{{clothe.price}}</strong>
-                  </v-card-text>
+    <v-img
+      :src="clothe.image"   width="300" height="300" contain
+    ></v-img>
 
-                  <v-expand-transition>
-
-                    <div
-                      v-if="hover"
-                      class="
-                        d-flex
-                        transition-fast-in
-                        v-card--reveal
-                        display-3
-                        white--text
-                      "
-                      style="height: 100%"
-                    >
-                      <v-btn rounded color="white">
-                        <v-icon>mdi-cart-outlined</v-icon>
-                        Buy
-                      </v-btn>
-                      <v-btn fab small color="white" class="ml-2" elevation="2">
-                        <v-icon color="black">mdi-heart-outline</v-icon>
-                      </v-btn>
-                    </div>
-
-                  </v-expand-transition>
-
-                </v-card>
-              </v-hover>
+    <v-card-title>{{clothe.title}}</v-card-title>
 
 
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
 
-    </v-card>
+
+      <div class="my-4 text-subtitle-1 green--text">
+        $ {{clothe.price}}
+      </div>
+
+
+    <v-divider class="mx-4"></v-divider>
+
+
+    <v-card-actions>
+      <v-btn
+        color="lighten-2"
+        text
+        @click="add"
+      >
+        Add to cart
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+
+
+
   </v-container>
+  </v-app>
 </template>
 
 
@@ -190,7 +204,12 @@ export default {
               price: "15.00"
           }
       ]
-  })
+  }),
+  methods: {
+    add(){
+      this.$emit("add-to-cart")
+    }
+  }
 }
 </script>
 

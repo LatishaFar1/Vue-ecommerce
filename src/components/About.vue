@@ -3,7 +3,7 @@
 
 
         <p>
-            TEXT 
+            ABOUT
              <br/>
             TEXT 
             <br/>
@@ -27,27 +27,3 @@
    </v-app>
 
 </template>
-
-
-<script>
-
-
-
-export default {
- 
-}
-
-</script>
-
-
-
-
-<style scoped>
-
-.index{
-    z-index: 9999;
-}
-
-
-
-</style>

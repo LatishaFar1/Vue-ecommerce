@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from "../components/Home.vue"
 import Dashboard from "../components/Dashboard.vue"
+import About from "../components/About.vue"
 Vue.use(VueRouter)
 
 const routes = [{
@@ -13,6 +14,11 @@ const routes = [{
         path: "/shop",
         name: "shop",
         component: Dashboard
+    },
+    {
+        path: "/about",
+        name: "about",
+        component: About
     }
 
 ]

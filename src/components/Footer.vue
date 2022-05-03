@@ -1,14 +1,8 @@
 <template>
     <v-footer dark padless>
-        <v-card class="flex" flat tile>
-            <v-card-title class="blue">
-               <strong class="subheading">Contact me below</strong>
+        <v-card class="flex" id="footer" flat tile>
 
-        <v-spacer></v-spacer>
-      </v-card-title>
-
-
-
+      
     <v-btn class="ma-1" dark >
         <a href="https://github.com/LatishaFar1">
                   <v-icon dark> mdi-github</v-icon>
@@ -56,6 +50,9 @@
       a{
             text-decoration: none;
             color: #42f5e3;
+      }
+      #footer{
+            padding: 15px;
       }
 
 </style>
