@@ -1,7 +1,7 @@
 <template>
    <v-app>
        <NavBar class="index" />
-       <Dashboard />
+       
        <Footer />
    </v-app>
 
