@@ -24,7 +24,7 @@
          </v-col>
 
         
-
+  <v-row>
      <v-card
     class="mx-auto my-12"
     max-width="374"
@@ -64,8 +64,9 @@
       </v-btn>
     </v-card-actions>
   </v-card>
+  </v-row>
 
-    </v-card>
+ 
 
 
     
@@ -134,10 +135,6 @@ export default {
         width: 100%;
     }
 
-    .title{
-      align-content: center;
-      text-align: center;
-    }
     h2{
        color: #03fcdb;
        font-size: 35px;
