@@ -13,11 +13,21 @@
   </div>
        
        <div class="curtain">
+          <br/>
+          <br/>
               <h4 class="home-welcome">Tish Faroul ⚡️🎧🌙</h4>
        <div class="invert">
         <h1>IMG HERE</h1>
-           
        <p class="home">
+         This is the first web app I've createed using Vue.js - completely self taught!
+         <br/>
+          <br/>
+         Check out the 'Shop' tab to see how I've been experimenting with Vue.
+           <br/>
+            <br/>
+         See my 'Projects' tab for other things I've worked on.
+           <br/>
+           <br/>
            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
 
@@ -61,6 +71,8 @@ export default {
 .home{
   padding-left: 25%;
   padding-right: 25%;
+  color: #3c4937;
+  font-weight: bold;
 }
 .home-welcome{
        color: #03fcdb;
