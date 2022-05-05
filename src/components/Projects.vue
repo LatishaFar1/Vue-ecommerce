@@ -1,21 +1,23 @@
 <>
 <template>
-
+    <v-app>
    <v-container fluid>
-         <v-row  class="mx-auto my-20">
+         <v-row>
      <v-card 
         v-for="project in Projects" :key="project.id"
     class="mx-auto my-13"
     max-width="400"
-        cols="12"
-        sm="4"
+    height="100%"
+     d-flex flex-column
   >
     <v-img
       class="white--text align-end"
       height="200"
       :src="project.image"
     >
+
       <v-card-title class="title">{{project.title}}</v-card-title>
+
     </v-img>
 
     <v-card-subtitle class="pb-0">
@@ -28,8 +30,9 @@
       <div>{{project.Desc}}</div>
     </v-card-text>
 
+    <v-spacer></v-spacer>
 
-    <v-card-actions>
+    <v-card-actions class="mt-auto">
       <v-btn link :href="project.video"> Demo Video </v-btn>
 
       <v-btn link :href="project.code"> Code </v-btn>
@@ -39,7 +42,7 @@
 </v-row>
    </v-container>
 
-  
+  </v-app>
 </template>
 
 
@@ -109,5 +112,7 @@ return{
 .title:hover{
       --p: 100%;
 }
+
+
 </style>
 
