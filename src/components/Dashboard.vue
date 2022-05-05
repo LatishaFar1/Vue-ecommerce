@@ -6,6 +6,7 @@
           <h2>SHOP</h2>
     </v-card>
 
+    <input class="search" type="text" v-model="search" placeholder="search"/>
 
         <v-col cols="3" class="py-0 pr-0 mt-n3">
           <v-card flat outlined tile>
@@ -100,11 +101,19 @@ export default {
               title: "SHIRT",
               price: "15.00"
           }
-      ]
+      ],
+      search: ""
   }),
   methods: {
     add(){
       this.$emit("add-to-cart")
+    },
+    searched: {
+      filteredProducts: function(){
+        return this.clothes.filter((clothes) => {
+          return Boolean;
+        })
+      }
     }
   }
 }
@@ -138,6 +147,12 @@ export default {
     h2{
        color: #03fcdb;
        font-size: 35px;
+    }
+
+    .search{
+      background-color: black;
+      color: #03fcdb;
+      text-align: center;
     }
     
 </style>
