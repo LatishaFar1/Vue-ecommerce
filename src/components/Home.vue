@@ -17,7 +17,9 @@
           <br/>
               <h4 class="home-welcome">Tish Faroul ⚡️🎧🌙</h4>
        <div class="invert">
-        <h1>IMG HERE</h1>
+
+        
+
        <p class="home">
          This is the first web app I've createed using Vue.js - completely self taught!
          <br/>

@@ -1,10 +1,12 @@
 <template>
    <v-app>
+
+         <div class="font-sans antialiased leading-tight p-0 xs:-mr-5 w-full overflow">
     <v-card color="#000" height="150px" tile flat class="d-flex align-center justify-center" dark>
           <h2>ABOUT</h2>
     </v-card>
 
-        <br/>
+     
 
       <div class="curtain">
               
@@ -49,6 +51,7 @@
 
       </div>
        
+       </div>
    </v-app>
 
 </template>
