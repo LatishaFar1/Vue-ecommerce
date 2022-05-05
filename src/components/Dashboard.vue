@@ -6,7 +6,10 @@
           <h2>SHOP</h2>
     </v-card>
 
-    <input class="search" type="text" v-model="search" placeholder="search"/>
+
+
+  <input type="text" v-model="search" placeholder="Search" class="search"/> 
+
 
         <v-col cols="3" class="py-0 pr-0 mt-n3">
           <v-card flat outlined tile>
@@ -24,16 +27,16 @@
           </v-card>
          </v-col>
 
-        
-  <v-row>
+
+  <div v-for="(clothe) in filteredClothes"> 
+
+     <v-row>
      <v-card
-    class="mx-auto my-12"
+    class="mx-auto my-9"
     max-width="374"
            cols="12"
               sm="4"
-              v-for="(clothe, i) in Clothes"
-              :key="i"
-              :class="clothe.class"
+          
   >
   
     <template slot="progress">
@@ -67,6 +70,10 @@
   </v-card>
   </v-row>
 
+  </div>
+ 
+  
+
  
 
 
@@ -80,40 +87,45 @@
 <script>
 
 export default {
-  data: () => ({
-    
+  data(){
+      return{
+      search: "",
       Clothes: [
           {
+              id: 1,
               class: "pa-0",
               image: "poncho.jpeg",
               title: "PONCHO",
               price: "45.00"
           },
           {
+              id: 2,
               class: "pa-0",
               image: "tan jacket.jpeg",
               title: "JACKET",
               price: "55.00"
           },
           {
+              id: 3,
               class: "pa-0",
               image: "shirt - be kind.jpeg",
               title: "SHIRT",
               price: "15.00"
           }
-      ],
-      search: ""
-  }),
+      ]
+  };
+},
+  computed: {
+    filteredClothes(){
+      return this.Clothes.filter(clothe => {
+        return clothe.title.toLowerCase().includes(this.search.toLowerCase())
+    
+      })
+    }
+  },
   methods: {
     add(){
       this.$emit("add-to-cart")
-    },
-    searched: {
-      filteredProducts: function(){
-        return this.clothes.filter((clothes) => {
-          return Boolean;
-        })
-      }
     }
   }
 }
@@ -148,10 +160,9 @@ export default {
        color: #03fcdb;
        font-size: 35px;
     }
-
     .search{
-      background-color: black;
       color: #03fcdb;
+      background-color: black;
       text-align: center;
     }
     
