@@ -13,11 +13,11 @@
   </div>
        
        <div class="curtain">
-              <h4 class="home-welcome">Tish Faroul</h4>
+              <h4 class="home-welcome">Tish Faroul ⚡️🎧🌙</h4>
        <div class="invert">
         <h1>IMG HERE</h1>
            
-       
+       <p class="home">
            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
 
@@ -33,6 +33,7 @@ Proin dictum, ex ullamcorper lobortis ultrices, dui arcu tempor turpis, sed cong
 
 Nam a nulla et ipsum mollis interdum. Ut tincidunt massa posuere nibh iaculis, quis efficitur turpis posuere. Pellentesque ante metus, cursus ac purus eu, bibendum volutpat velit. Pellentesque cursus mauris vitae magna vulputate tincidunt. Aliquam erat volutpat. Pellentesque at aliquam ipsum. Aenean a vehicula elit. Suspendisse auctor eu libero eget dignissim. Cras rhoncus dolor vel lacus mattis auctor. Curabitur vehicula velit eget odio condimentum mattis. Quisque tristique lobortis euismod. Praesent tellus elit, convallis ac semper sit amet, rhoncus et ligula. Fusce fringi
 
+</p>
        </div>
     </div>
    </v-app>
@@ -57,6 +58,10 @@ export default {
 
 <style >
 
+.home{
+  padding-left: 25%;
+  padding-right: 25%;
+}
 .home-welcome{
        color: #03fcdb;
        font-size: 35px;

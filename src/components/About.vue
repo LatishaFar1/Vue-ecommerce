@@ -10,19 +10,43 @@
               
        <div class="invert">
         <p>
-         
-           This mock e-commerce site is the first project I've built using Vue.js.
            <br/>
            <br/>
            <br/>
-           Some info about me:
-           <ul>
-              <li>I learned Software Engineering at <a  href="https://flatironschool.com/welcome-to-flatiron-school/?utm_source=Google&utm_medium=ppc&utm_campaign=12728169839&utm_content=127574231184&utm_term=flatironschool&uqaid=513799628798&CjwKCAjw682TBhATEiwA9crl31BXc1C92Js1tKHzxNNOTvA0MNgp6WVMF3hhgLKap48-_Lo7B_BWbhoCXlYQAvD_BwE&gclid=CjwKCAjw682TBhATEiwA9crl31BXc1C92Js1tKHzxNNOTvA0MNgp6WVMF3hhgLKap48-_Lo7B_BWbhoCXlYQAvD_BwE">Flatiron School</a></li>
-           </ul>
-        </p>
-       
+          <h2>This is the first web-app I've built using Vue.js.</h2> 
+           <br/>
+           <br/>
+           <br/>
+            <br/>
+           <br/>
+          
 
+          <p class="about">
+            I learned Software Engineering at <a href="https://flatironschool.com/welcome-to-flatiron-school/?utm_source=Google&utm_medium=ppc&utm_campaign=12728169839&utm_content=127574231184&utm_term=flatironschool&uqaid=513799628798&CjwKCAjw682TBhATEiwA9crl31BXc1C92Js1tKHzxNNOTvA0MNgp6WVMF3hhgLKap48-_Lo7B_BWbhoCXlYQAvD_BwE&gclid=CjwKCAjw682TBhATEiwA9crl31BXc1C92Js1tKHzxNNOTvA0MNgp6WVMF3hhgLKap48-_Lo7B_BWbhoCXlYQAvD_BwE">Flatiron School</a>
+            <br/>
+            We covered: JavaScript  <img height="40" src="https://iconape.com/wp-content/png_logo_vector/javascript-logo.png"> <br/>
+             React <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png">  <br/>
+            Ruby on Rails  <img height="40" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png"> <br/> <br/>
+            and more!
+            <br/>
+            <br/>
+            I'm continuing to learn other things in my spare time.
+        </p>
+
+        <p class="about-body">
+
+               Check out some of my 
+               <a href="https://github.com/LatishaFar1">projects</a> 
+
+        </p>
+        </p>
+            
+          
+            
        </div>
+
+      
+
       </div>
        
    </v-app>
@@ -33,10 +57,17 @@
 
 <style>
 
+.about{
+   padding-left: 20%;
+   padding-right: 20%;
+   color: #9BB291;
+}
+
+
  :root {
   --minh:  98vh;
-  --color1: #85a7a0;
-  --color2: #C7FFDA;
+  --color1: #E8E1EF;
+  --color2: #D9FFF8;
 }
 .curtain {
   
@@ -57,13 +88,12 @@
 
   /** blend the content with the contrast effect **/
   mix-blend-mode: difference;
-
   display: flex;
   align-items: center;
   justify-content: center;
   
   /** set the minimum height of the section **/
-  min-height: var(--minp);
+  min-height: var(--minh);
 }
 
 
@@ -71,5 +101,11 @@
        color: #03fcdb;
        font-size: 35px;
     }
+
+    .about-body{
+       color: #9BB291;
+
+}
+
     
 </style>
