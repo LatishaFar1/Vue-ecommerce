@@ -36,7 +36,7 @@
         <p class="about-body">
 
                Check out some of my 
-               <a href="https://github.com/LatishaFar1">projects</a> 
+               <a href="/projects">projects</a> 
 
         </p>
         </p>
