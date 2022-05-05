@@ -27,17 +27,14 @@
           </v-card>
          </v-col>
 
-
+  <v-row  class="mx-auto my-20">
   <div v-for="(clothe) in filteredClothes"> 
 
-     <v-row>
      <v-card
-    class="mx-auto my-9"
+    class="mx-auto my-13"
     max-width="374"
            cols="12"
-              sm="4"
-          
-  >
+              sm="4">
   
     <template slot="progress">
       <v-progress-linear
@@ -68,10 +65,8 @@
       </v-btn>
     </v-card-actions>
   </v-card>
-  </v-row>
-
   </div>
- 
+ </v-row>
   
 
  
@@ -111,6 +106,27 @@ export default {
               image: "shirt - be kind.jpeg",
               title: "SHIRT",
               price: "15.00"
+          },
+           {
+              id: 4,
+              class: "pa-0",
+              image: "shirt - be kind.jpeg",
+              title: "SHIRT",
+              price: "15.00"
+          },
+            {
+              id: 5,
+              class: "pa-0",
+              image: "tan jacket.jpeg",
+              title: "JACKET",
+              price: "55.00"
+          },
+          {
+            id: 6,
+            class: "pa-0",
+            image: "orange sneakers.jpeg",
+            title: "SHOES",
+            price: "120.00"
           }
       ]
   };
