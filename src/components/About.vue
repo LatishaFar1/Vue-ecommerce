@@ -38,7 +38,7 @@
         <p class="about-body">
 
                Check out some of my 
-               <a href="/projects">projects</a> 
+               <a href="https://tish-portfolio.netlify.app/projects">projects</a> 
 
         </p>
         </p>
