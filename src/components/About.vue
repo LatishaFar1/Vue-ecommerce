@@ -37,8 +37,7 @@
 
         <p class="about-body">
 
-               Check out some of my 
-               <a href="https://tish-portfolio.netlify.app/projects">projects</a> 
+               Check out some of my projects
 
         </p>
         </p>
