@@ -63,16 +63,37 @@ return{
               video: "https://youtu.be/bBv9UF9MjKI",
               code: "https://github.com/LatishaFar1/Bookish",
               Desc: "This app allows an admin user (using rails' active admin gem) to create, update, and delete books. Includes a custom map (built with the Google API) to locate local Bookish stores. It also allows you to search books on the site.",
-              Skills: "JavaScript, Rails, React, Google Maps API"
+              Skills: "JavaScript, Rails, React, Google Maps API, Rails Active Admin"
           },
          { 
              id: 2,
+             class: "pa-0",
              image: "AIRS.png",
              title: "AIRS",
              video: "https://youtu.be/kvmelDyCuoA",
              code: "https://github.com/LatishaFar1/AIRS-project",
              Desc: "The Avengers Incident Reporting System provides people with a platform to submit negative incidents (big or small) they encounter with the Avengers and those affiliated with them. The app includes a form to submit a complaint, a page to view all complaints logged, a page of lawyers (if they're necessary), and an emergency alert on the home page.",
              Skills: "JavaScript, React, JSON-Server"
+          },
+          {
+            id: 3,
+            class: "pa-0",
+            image: "HappyPaws.png",
+            title: "Happy Paws Adoption",
+            video: "https://www.youtube.com/watch?v=XHK-9cfhnDk",
+            code: "https://github.com/LatishaFar1/HappyPawsAdoption",
+            Desc: "This React/Rails app allows users to sign up/login to the website to perform CRUD actions on adoptable pets, and add likes to the pets.",
+            Skills: "Ruby on Rails, React, User Authentication"
+          },
+          {
+            id: 4,
+            class: "pa-0",
+            image: "Potions.png",
+            title: "Potions App",
+            video: "https://www.youtube.com/watch?v=sCBSPg5Q1Xo",
+            code: "https://github.com/LatishaFar1/new-potions-frontend-",
+            Desc: "This app allows you to add/delete potions through a form and update the volatility level of each potion.",
+            Skills: "Sinatra, React"
           }
 
           
