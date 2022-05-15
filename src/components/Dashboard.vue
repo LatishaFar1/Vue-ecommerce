@@ -11,7 +11,7 @@
   <input type="text" v-model="search" placeholder="Search" class="search"/> 
 
 
-        <v-col cols="3" class="py-0 pr-0 mt-n3">
+        <!-- <v-col cols="3" class="py-0 pr-0 mt-n3">
           <v-card flat outlined tile>
             <v-toolbar flat>
               <v-icon color="black" class="mr-2">msi-chevron-down</v-icon>
@@ -25,7 +25,7 @@
             </v-toolbar>
             <v-range-slider color="blue" max="40" min="-30"></v-range-slider>
           </v-card>
-         </v-col>
+         </v-col> -->
 
   <v-row  class="mx-auto my-20">
   <div v-for="(clothe) in filteredClothes"> 
