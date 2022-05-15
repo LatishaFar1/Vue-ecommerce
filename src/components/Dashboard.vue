@@ -59,7 +59,7 @@
       <v-btn
         color="lighten-2"
         text
-        @click="add"
+        v-on:click="add"
       >
         Add to cart
       </v-btn>
@@ -141,8 +141,8 @@ export default {
   },
   methods: {
     add(){
-      this.$emit("add-to-cart")
-    }
+      alert("added to cart")
+    },
   }
 }
 </script>
