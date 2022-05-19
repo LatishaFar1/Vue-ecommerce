@@ -33,7 +33,7 @@
     <v-spacer></v-spacer>
 
     <v-card-actions class="mt-auto">
-      <v-btn link :href="project.video"> Demo Video </v-btn>
+      <v-btn link :href="project.video"> Live Demo OR Video </v-btn>
 
       <v-btn link :href="project.code"> Code </v-btn>
     </v-card-actions>
@@ -94,7 +94,18 @@ return{
             code: "https://github.com/LatishaFar1/new-potions-frontend-",
             Desc: "This app allows you to add/delete potions through a form and update the volatility level of each potion.",
             Skills: "Sinatra, React"
+          },
+          {
+            id: 5,
+            image: "mockair.png" ,
+            title: "Mock Airbnb",
+            video: "https://tish-airbnb-clone.netlify.app/",
+            code: "https://github.com/LatishaFar1/airbnb-clone",
+            Desc: "I'm currently building a mock Airbnb app using React, check out what I've built so far",
+            Skills: "React"
+
           }
+
 
           
       ]
